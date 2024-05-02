@@ -7,7 +7,7 @@ st.set_page_config(layout="wide")
 markdown = """
 Les partenaires de l'Aïgo"""
 
-st.sidebar.title("About")
+st.sidebar.title("A Propos")
 st.sidebar.info(markdown)
 logo = "https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/408924114_658906496429375_3658879162690106456_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=rGyJYg7z_P8Q7kNvgFCKYhV&_nc_ht=scontent-mrs2-1.xx&oh=00_AfDrMQuolQt11CRgzkdWWmTg4d2BdAAEHZBjwZTzpOf33g&oe=6639B4B5"
 st.sidebar.image(logo)
