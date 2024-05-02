@@ -1,5 +1,13 @@
 import streamlit as st
 import geemap.foliumap as geemap
+from st_pages import Page, show_pages, add_page_title
+
+show_pages(
+    [
+        Page("app.py", "Bonjour", "🏠"),
+        Page("pages/cartographie.py", " Carte", ":world_map:"),
+    ]
+)
 
 st.set_page_config(layout="wide")
 
