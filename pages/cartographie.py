@@ -2,6 +2,8 @@ import geemap.foliumap as geemap
 import pandas as pd
 import streamlit as st 
 
+st.set_page_config(layout="wide")
+
 Map = geemap.Map(center=(43.640212, 5.097115), zoom=14)
 
 options = st.multiselect("Les catégories de Commerces", ['Magasins d’alimentation', 'Au restaurant', 'A La Ferme', 'Traiteurs' , 'Culture', 'Arts de la maison', 'Santé soins et soins alternatifs', 'Vêtements', 'Beauté', 'Services', 'Construction', 'Sport', 'Gîte'], ['Magasins d’alimentation', 'Au restaurant'])
