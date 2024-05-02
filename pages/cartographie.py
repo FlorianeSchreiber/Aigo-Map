@@ -14,6 +14,6 @@ with col2:
 
 with col1:
 
-    m = geemap.Map()
+    m = geemap.Map(center=(43.640212, 5.097115), zoom=12)
     m.add_basemap(basemap)
     m.to_streamlit(height=700)
