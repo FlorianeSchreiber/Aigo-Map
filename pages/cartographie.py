@@ -8,10 +8,10 @@ options = st.multiselect("Les catégories de Commerces", ['Magasins d’alimenta
 
 if 'Au restaurant' in options :
   df_resto = pd.read_csv("pages/aigo_restaurants.csv")
-  Map.add_markers_from_xy(df_resto, x="longitude", y="latitude", popup=["Nom", "Adresse"], icon_shape = "circle", border_color='blue', icon = "", layer_name="Au Restaurant", background_color = "blue")
+  Map.add_markers_from_xy(df_resto, x="longitude", y="latitude", popup=["Nom", "Adresse"], icon_shape = "circle", border_color='#CCCCFF', icon = "", layer_name="Au Restaurant", background_color = "#CCCCFF")
 if "Magasins d’alimentation" in options :
   df_alim = pd.read_csv("pages/aigo_alimentation.csv")
-  Map.add_markers_from_xy(df_alim, x="longitude", y="latitude", popup=["Nom", "Adresse"], icon_shape = "circle", border_color='red', icon = "", layer_name="Magasins d’alimentation", background_color = "red", number=2)
+  Map.add_markers_from_xy(df_alim, x="longitude", y="latitude", popup=["Nom", "Adresse"], icon_shape = "circle", border_color='red', icon = "", layer_name="Magasins d’alimentation", background_color = "red")
 
 Map.add_basemap("Terrain")
 Map.to_streamlit(height=700)
