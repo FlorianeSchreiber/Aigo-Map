@@ -23,14 +23,20 @@ st.markdown(
 st.header("Instructions")
 
 markdown = """
-1. For the [GitHub repository](https://github.com/giswqs/geemap-apps) or [use it as a template](https://github.com/new?template_name=geemap-apps&template_owner=giswqs) for your own project.
-2. Customize the sidebar by changing the sidebar text and logo in each Python files.
-3. Find your favorite emoji from https://emojipedia.org.
-4. Add a new app to the `pages/` directory with an emoji in the file name, e.g., `1_🚀_Chart.py`.
+Sur les marchés salonais 
+L’Ami du pain (Alban)= boulanger itinérant 
+Matthieu Fillacier = paysan boulanger (comptoir) 
+Aznar Valentin = producteur maraîcher 
+Catherine Ponçon = producteur maraicher Bio (comptoir) 
+EARL légumerie BIO du Lubéron = conserves BIO 
+Olivier Tronc = producteur fruitier 
+Pascal Gibellin = producteur maraîcher 
+Robert Rolland = producteur de pommes 
+La ferme d‘Eygaline = éleveur de volailles 
+GAEC Faudon = produits de la ferme 
+La ferme de l’Authentique = élevage de chèvres, fromage et œufs 
+La poule de Crau = éleveur de volailles 
+Le champ des potions = Malika Porot, plantes aromatiques et médicinales
 """
 
 st.markdown(markdown)
-
-m = geemap.Map()
-m.add_basemap("OpenTopoMap")
-m.to_streamlit(height=500)
