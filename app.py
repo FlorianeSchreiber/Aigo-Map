@@ -1,6 +1,7 @@
 import streamlit as st
 import geemap.foliumap as geemap
 from st_pages import Page, show_pages, add_page_title
+st.set_page_config(layout="wide")
 
 show_pages(
     [
@@ -9,7 +10,6 @@ show_pages(
     ]
 )
 
-st.set_page_config(layout="wide")
 
 # Customize the sidebar
 markdown = """
