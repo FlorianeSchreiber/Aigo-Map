@@ -30,7 +30,7 @@ st.markdown(
 
 st.header("A Salon-de-Provence")
 
-markdown = """
+markdown_marche = """
 Sur les marchés salonais 
 - L’Ami du pain (Alban)= boulanger itinérant 
 - Matthieu Fillacier = paysan boulanger (comptoir) 
@@ -47,4 +47,27 @@ Sur les marchés salonais
 - Le champ des potions = Malika Porot, plantes aromatiques et médicinales
 """
 
-st.markdown(markdown)
+markdown_alimentation = 
+"""
+Chocolaterie Nostradamus = chocolatier, glacier et confiseur 
+Boulangerie Demoiselles = boulanger et biscuiterie 
+La Mavinon = boulanger, pâtissier 
+Pâtisserie Stéphanie Jean = pâtissier 
+Brasserie Sapristi = brasserie & producteur de bières salonaises 
+Daniel Egéa = producteur fruitier 
+De la Vigne à l’Olivier = caviste 
+EARL Roustan = huile d’olive & vins 
+La Vie Claire = épicerie Bio 
+Le mas des bories = producteur oléicole 
+Ma saison AB = producteur fruits & légumes 
+Maison Bourgeon = boutique de thés (comptoir) 
+Maison Severy = boucher, charcutier, traiteur 
+Fromagerie de l’Horloge = crémier & fromager """
+
+col1, col2 = st.columns([1, 1])
+
+with col1 :
+    st.markdown(markdown_marche)
+
+with col2: 
+    st.markdown(markdown_alimentation)
