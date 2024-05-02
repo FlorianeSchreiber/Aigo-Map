@@ -1,3 +1,4 @@
 geemap
 streamlit
 pandas
+st_pages
