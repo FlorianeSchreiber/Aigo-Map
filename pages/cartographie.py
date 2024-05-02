@@ -16,4 +16,5 @@ with col2:
 with col1:
     df = pd.read_csv("pages/aigo_pro.csv")
     Map.add_markers_from_xy(df, x="longitude", y="latitude", popup=["Nom", "Adresse"], icon_shape = "circle", border_color='white', icon = "pizza-slice")
+    Map.add_basemap(basemap)
     Map.to_streamlit(height=700)
