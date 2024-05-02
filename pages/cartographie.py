@@ -1,5 +1,6 @@
 import geemap.foliumap as geemap
 import pandas as pd
+import streamlit as st 
 
 Map = geemap.Map(center=(43.640212, 5.097115), zoom=14)
 
