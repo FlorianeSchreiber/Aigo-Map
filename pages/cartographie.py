@@ -10,9 +10,8 @@ if 'Au restaurant' in options :
   df_resto = pd.read_csv("pages/aigo_restaurants.csv")
   Map.add_markers_from_xy(df_resto, x="longitude", y="latitude", popup=["Nom", "Adresse"], icon_shape = "circle", border_color='blue', icon = "cutlery", layer_name="Au Restaurant")
 if "Magasins d’alimentation" in options :
-  st.markdown("Alim")
   df_alim = pd.read_csv("pages/aigo_alimentation.csv")
-  Map.add_markers_from_xy(df_alim, x="longitude", y="latitude", popup=["Nom", "Adresse"], icon_shape = "circle", border_color='red', icon = "fork", layer_name="Magasins d’alimentation")
+  Map.add_markers_from_xy(df_alim, x="longitude", y="latitude", popup=["Nom", "Adresse"], icon_shape = "circle", border_color='red', icon = "cutlery", layer_name="Magasins d’alimentation")
 
 Map.add_basemap("Terrain")
 Map.to_streamlit(height=700)
