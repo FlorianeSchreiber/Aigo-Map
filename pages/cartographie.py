@@ -6,7 +6,9 @@ Map = geemap.Map(center=(43.640212, 5.097115), zoom=14)
 
 options = st.multiselect("Les catégories de Commerces", ['Magasins d’alimentation', 'Au restaurant', 'A La Ferme', 'Traiteurs' , 'Culture', 'Arts de la maison', 'Santé soins et soins alternatifs', 'Vêtements', 'Beauté', 'Services', 'Construction', 'Sport', 'Gîte'], ['Magasins d’alimentation', 'Au restaurant'])
 
-df = pd.read_csv("pages/aigo_pro.csv")
-Map.add_markers_from_xy(df, x="longitude", y="latitude", popup=["Nom", "Adresse"], icon_shape = "circle", border_color='blue', icon = "pizza-slice", layer_name="Restaurants")
+if 'Au restaurant' in options :
+  df_resto = pd.read_csv("pages/aigo_restaurants.csv")
+  Map.add_markers_from_xy(df_resto, x="longitude", y="latitude", popup=["Nom", "Adresse"], icon_shape = "circle", border_color='blue', icon = "cutlery", layer_name="Au Restaurant")
+
 Map.add_basemap("Terrain")
 Map.to_streamlit(height=700)
